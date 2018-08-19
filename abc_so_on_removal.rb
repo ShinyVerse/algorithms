@@ -1,5 +1,3 @@
-
-
 def recursive_letter_remover(arr, ascii, counter)
   total = arr.join("").scan(ascii.chr).count
   if total < counter
@@ -29,6 +27,5 @@ def recursive_letter_remover(arr, ascii, counter)
       end
     end
   end
-
 
 puts recursive_letter_remover("abracadabra".split(""), 97, 8)
